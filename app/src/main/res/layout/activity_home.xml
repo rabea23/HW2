@@ -9,7 +9,7 @@
         android:scaleType="centerCrop"
         android:background="@drawable/background" />
     <com.google.android.material.textview.MaterialTextView
-
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,6 +19,17 @@
         android:text="car game"
         android:textSize="40sp"
 
+        />
+    <EditText
+        android:id="@+id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home_BTN_play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="100dp"
+        android:hint="enter your name"
+        android:textSize="20dp"
+        android:textStyle="bold"
         />
 
 
@@ -32,11 +43,54 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="?android:attr/selectableItemBackground"
-        android:text="play"
-        android:textColor="@color/white"
         android:gravity="center"
-        android:textSize="40dp"
+        android:text="play buttoms"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_BTN_play1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home_BTN_play"
+        android:layout_marginStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="play senssors"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/home_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/home_BTN_play1"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radia_id1"
+        android:text="easy"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:layout_marginStart="14dp"
+            android:text="hard"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+    </RadioGroup>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/home_BTN_result"
